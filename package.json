@@ -1,19 +1,33 @@
 {
-  "name": "node-socket-redis-chat-scalegrid",
+  "name": "socket-chat-app",
   "version": "0.0.1",
-  "description": "A realtime chat application using Redis, Node.js and Socket.IO",
+  "description": "A realtime chat application using React, Redux, Node.js and Socket.IO",
   "dependencies": {
+    "axios": "^0.15.3",
     "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
     "express": "^4.10.2",
     "expressjs": "^1.0.1",
     "http": "0.0.0",
+    "mongodb": "^2.2.16",
+    "mongoose": "^4.7.5",
     "path": "^0.12.7",
-    "redis": "^2.7.1",
+    "react": "^15.3.1",
+    "react-bootstrap": "^0.30.6",
+    "react-codemirror": "^0.2.6",
+    "react-dom": "^15.4.0",
+    "react-favicon": "0.0.4",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "serve-favicon": "^2.3.0",
+    "serve-static": "^1.11.1",
     "socket.io": "^2.0.3"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "engines": {
     "node": "4.1.1"

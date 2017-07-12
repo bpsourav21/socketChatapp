@@ -7,7 +7,7 @@ var path = require('path');
 app.get('/', function(req, res){
   var express=require('express');
   app.use(express.static(path.join(__dirname)));
-  res.sendFile(path.join(__dirname, '../chatApp', 'index.html'));
+  res.sendFile(path.join(__dirname, '../socketChatapp', 'views/index.html'));
 });
  
 // Register events on socket connection
@@ -23,6 +23,7 @@ io.on('connection', function(socket){
   });
  
 });
+
  
 // Listen application request on port 3000
 http.listen(3000, function(){
