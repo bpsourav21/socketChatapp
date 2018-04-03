@@ -1,7 +1,8 @@
 import React from 'react';
 import { IndexRoute, Route } from 'react-router';
 import App from './components/App';
-import Home from './components/Home';
+import ChatBox from './containers/ChatBox';
+import NotFound from './components/NotFound';
 
 export default function getRoutes(store) {
   const clearMessages = () => {
@@ -9,11 +10,11 @@ export default function getRoutes(store) {
       type: 'CLEAR_MESSAGES'
     });
   };
-  
+
   return (
     <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-    
+      <IndexRoute component={ChatBox} />
+
 
       <Route path="*" component={NotFound} onLeave={clearMessages} />
     </Route>

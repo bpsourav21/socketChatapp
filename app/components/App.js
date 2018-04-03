@@ -1,13 +1,13 @@
 import React from 'react';
+import ChatBox from '../containers/ChatBox';
+require("../../public/css/style.css")
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-      <h1> helooddddddddddddddddd</h1>
-      </div>
-    );
-  }
-}
+
+const App = () => (
+    <div>
+        <h2>ChatBox sssssfs </h2>
+        <ChatBox />
+    </div>
+);
 
 export default App;

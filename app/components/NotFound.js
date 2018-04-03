@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { PropTypes, Component } from 'react';
 
-const NotFound = (props) => {
-  return (
-    <div className="container text-center">
-      <h1>404</h1>
-      <p>Page Not Found</p>
-    </div>
-  );
-};
-
-export default NotFound;
+export default class NotFound extends Component {
+  render() {
+    return (
+      <div className={classnames('NotFound', className)} {...props}>
+        <h1>
+          404 <small>Not Found :(</small>
+        </h1>
+      </div>
+    );
+  }
+}

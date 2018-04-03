@@ -1,1 +1,1 @@
-# socketChatapp
+"# react-redux-boilerplate" 
